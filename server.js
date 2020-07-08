@@ -1,18 +1,18 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const session = require('express-session')
-const cors = require('cors')
+// const session = require('express-session')
 const app = express()
 const port = process.env.PORT || 3000;
 
 
+const cors = require('cors')
 app.use(bodyParser.json())
-app.use(session({
-    secret: 'fdspu4thipo43hf8fv8v',
-    resave: false,
-    saveUninitialized: true,
-    cookie: { secure: false }
-}))
+    // app.use(session({
+    //     secret: 'fdspu4thipo43hf8fv8v',
+    //     resave: false,
+    //     saveUninitialized: true,
+    //     cookie: { secure: false }
+    // }))
 app.use(cors())
 app.use(express.static('public'))
 
