@@ -1,130 +1,129 @@
-[
-  {
-    "name": "Clint WestWood!",
-    "price": "2",
-    "type": "Adult",
-    "createdAt": "2020-07-08T15:28:49.307Z",
-    "inStock": true,
-    "_id": "GUPbRRXxgT"
-  },
-  {
-    "_id": "qqcxcSDF",
-    "name": "Mister Toy!",
-    "price": 56,
-    "type": "Educational",
-    "createdAt": "1983-02-16T02:20:07.728Z",
-    "inStock": false
-  },
-  {
-    "_id": "BhDUK2",
-    "name": "I am new TOY!!",
-    "price": 999,
-    "type": "Adult",
-    "createdAt": "1986-12-23T21:38:49.307Z",
-    "inStock": false
-  },
-  {
-    "_id": "8FfhF8dnC",
-    "name": "et neque",
-    "price": 31,
-    "type": "Funny",
-    "createdAt": "1977-07-05T23:58:06.421Z",
-    "inStock": true
-  },
-  {
-    "_id": "z7zuASJK",
-    "name": "ante ac",
-    "price": 70,
-    "type": "Educational",
-    "createdAt": "1974-01-29T10:06:41.231Z",
-    "inStock": false
-  },
-  {
-    "_id": "pKnN98Gb",
-    "name": "at nunc",
-    "price": 62,
-    "type": "Educational",
-    "createdAt": "1978-01-09T22:26:15.093Z",
-    "inStock": true
-  },
-  {
-    "_id": "v66BnOs98SQ",
-    "name": "massa pharetra",
-    "price": 99,
-    "type": "Adult",
-    "createdAt": "1981-10-05T15:11:09.966Z",
-    "inStock": true
-  },
-  {
-    "_id": "q87nOS9",
-    "name": "porttitor porttitor",
-    "price": 53,
-    "type": "Adult",
-    "createdAt": "1981-09-27T14:38:18.403Z",
-    "inStock": false
-  },
-  {
-    "_id": "iIU8Yn",
-    "name": "facilisis amet",
-    "price": 22,
-    "type": "Adult",
-    "createdAt": "1996-10-14T02:47:30.721Z",
-    "inStock": true
-  },
-  {
-    "_id": "xZ9cPP89",
-    "name": "lacus tempor",
-    "price": 97,
-    "type": "Adult",
-    "createdAt": "1970-11-30T02:23:00.490Z",
-    "inStock": true
-  },
-  {
-    "_id": "lOkNIU078",
-    "name": "ipsum scelerisque",
-    "price": 82,
-    "type": "Funny",
-    "createdAt": "1975-09-10T21:31:07.681Z",
-    "inStock": false
-  },
-  {
-    "_id": "Cv8JHD62W",
-    "name": "sit sit",
-    "price": 24,
-    "type": "Adult",
-    "createdAt": "1973-04-28T21:56:32.005Z",
-    "inStock": false
-  },
-  {
-    "_id": "dfDF8fNFD8",
-    "name": "magna neque",
-    "price": 31,
-    "type": "Adult",
-    "createdAt": "1996-07-22T03:58:53.077Z",
-    "inStock": true
-  },
-  {
-    "_id": "Lj8hQW7d",
-    "name": "lacus molestie",
-    "price": 49,
-    "type": "Adult",
-    "createdAt": "1980-04-19T11:37:42.126Z",
-    "inStock": false
-  },
-  {
-    "name": "Puki Shmuki",
-    "price": "99",
-    "type": "Programming",
-    "inStock": true,
-    "createdAt": 1594138484222,
-    "_id": "MnBvY612"
-  },
-  {
-    "name": "Idofsky",
-    "price": "17",
-    "type": "Teenagers",
-    "inStock": false,
-    "createdAt": 1594138636818,
-    "_id": "KJdu883xx"
-  }
+[{
+        "name": "Clint WestWood!",
+        "price": 2,
+        "type": "Adult",
+        "createdAt": "2020-07-08T15:28:49.307Z",
+        "inStock": true,
+        "_id": "GUPbRRXxgT"
+    },
+    {
+        "_id": "qqcxcSDF",
+        "name": "Mister Toyy!",
+        "price": 56,
+        "type": "Educational",
+        "createdAt": "2019-02-16T02:20:07.728Z",
+        "inStock": false
+    },
+    {
+        "_id": "BhDUK2",
+        "name": "I am new TOY!!",
+        "price": 999,
+        "type": "Adult",
+        "createdAt": "2019-12-23T21:38:49.307Z",
+        "inStock": false
+    },
+    {
+        "_id": "8FfhF8dnC",
+        "name": "et neque",
+        "price": 31,
+        "type": "Funny",
+        "createdAt": "2018-07-05T23:58:06.421Z",
+        "inStock": true
+    },
+    {
+        "_id": "z7zuASJK",
+        "name": "ante ac",
+        "price": 70,
+        "type": "Educational",
+        "createdAt": "2018-01-29T10:06:41.231Z",
+        "inStock": false
+    },
+    {
+        "_id": "pKnN98Gb",
+        "name": "at nunc",
+        "price": 62,
+        "type": "Educational",
+        "createdAt": "2018-01-09T22:26:15.093Z",
+        "inStock": true
+    },
+    {
+        "_id": "v66BnOs98SQ",
+        "name": "massa pharetra",
+        "price": 99,
+        "type": "Adult",
+        "createdAt": "2018-10-05T15:11:09.966Z",
+        "inStock": true
+    },
+    {
+        "_id": "q87nOS9",
+        "name": "porttitor porttitor",
+        "price": 53,
+        "type": "Adult",
+        "createdAt": "2017-09-27T14:38:18.403Z",
+        "inStock": false
+    },
+    {
+        "_id": "iIU8Yn",
+        "name": "facilisis amet",
+        "price": 22,
+        "type": "Adult",
+        "createdAt": "2017-10-14T02:47:30.721Z",
+        "inStock": true
+    },
+    {
+        "_id": "xZ9cPP89",
+        "name": "lacus tempor",
+        "price": 97,
+        "type": "Adult",
+        "createdAt": "2017-11-30T02:23:00.490Z",
+        "inStock": true
+    },
+    {
+        "_id": "lOkNIU078",
+        "name": "ipsum scelerisque",
+        "price": 82,
+        "type": "Funny",
+        "createdAt": "2017-09-10T21:31:07.681Z",
+        "inStock": false
+    },
+    {
+        "_id": "Cv8JHD62W",
+        "name": "sit sit",
+        "price": 24,
+        "type": "Adult",
+        "createdAt": "2016-04-28T21:56:32.005Z",
+        "inStock": false
+    },
+    {
+        "_id": "dfDF8fNFD8",
+        "name": "magna neque",
+        "price": 31,
+        "type": "Adult",
+        "createdAt": "2017-07-22T03:58:53.077Z",
+        "inStock": true
+    },
+    {
+        "_id": "Lj8hQW7d",
+        "name": "lacus molestie",
+        "price": 49,
+        "type": "Adult",
+        "createdAt": "2016-04-19T11:37:42.126Z",
+        "inStock": false
+    },
+    {
+        "name": "Puki Shmuki",
+        "price": 99,
+        "type": "Programming",
+        "inStock": true,
+        "createdAt": 1594138484222,
+        "_id": "MnBvY612"
+    },
+    {
+        "name": "Idofsky",
+        "price": 18,
+        "type": "Teenagers",
+        "inStock": false,
+        "createdAt": 1594138636818,
+        "_id": "KJdu883xx"
+    }
 ]
