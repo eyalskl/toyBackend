@@ -7,6 +7,8 @@ module.exports = router;
 
 //TOY LIST
 router.get('/', (req, res) => {
+        const filterBy = req.query;
+        console.log('filterBy:', filterBy)
         toyService.query()
             .then(toys => {
                 res.json(toys);
