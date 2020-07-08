@@ -1,5 +1,6 @@
 module.exports = {
-    makeId
+    makeId,
+    compareValues
 }
 
 function makeId(length = 10) {
@@ -9,4 +10,17 @@ function makeId(length = 10) {
         txt += possible.charAt(Math.floor(Math.random() * possible.length));
     }
     return txt;
+}
+
+function compareValues(key, order = 'asc') {
+    return function innerSort(a, b) {
+        const x = (typeof a[key] === 'string') ? a[key].toUpperCase() : a[key];
+        const y = (typeof b[key] === 'string') ? b[key].toUpperCase() : b[key];
+        let comparison = 0;
+        if (x > y) comparison = 1;
+        else if (x < y) comparison = -1;
+        return (
+            (order === 'desc') ? (comparison * -1) : comparison
+        );
+    };
 }

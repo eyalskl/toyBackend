@@ -9,8 +9,14 @@ module.exports = {
     save
 }
 
-function query() {
-    return Promise.resolve(toys);
+function query(filterBy) {
+    console.log('filterBy:', filterBy)
+    var filteredToys = toys;
+    if (filterBy.name) filteredToys = filteredToys.filter(toy => toy.name.toLowerCase().includes(filterBy.name.toLowerCase()));
+    if (filterBy.type) filteredToys = filteredToys.filter(toy => toy.type === filterBy.type);
+    if (filterBy.inStock) filteredToys = filteredToys.filter(toy => toy.inStock + '' === filterBy.inStock);
+    if (filterBy.sort) filteredToys.sort(utilService.compareValues(filterBy.sort.toLowerCase(), 'asc'))
+    return Promise.resolve(filteredToys);
 }
 
 function getById(id) {
