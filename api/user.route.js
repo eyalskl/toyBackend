@@ -45,14 +45,14 @@ router.get('/', (req, res) => {
     //                 res.status(500).send(`Couldn't add user... ERROR!`);
     //             })
     //     })
-    //user UPDATE
-    // router.put('/:id', (req, res) => {
-    //     const user = req.body
-    //     userService.save(user)
-    //         .then(savedUser => {
-    //             res.json(savedUser);
-    //         })
-    //         .catch(() => {
-    //             res.status(500).send(`Couldn't update user... ERROR!`);
-    //         })
-    // })
+    // user UPDATE
+router.put('/', (req, res) => {
+    const user = req.body
+    userService.save(user)
+        .then(savedUser => {
+            res.json(savedUser);
+        })
+        .catch(() => {
+            res.status(500).send(`Couldn't update user... ERROR!`);
+        })
+})

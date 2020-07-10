@@ -25,14 +25,15 @@ function remove(id) {
     return Promise.resolve();
 }
 
-function save(user) {
-    if (user._id) {
-        const idx = user.findIndex(curruser => curruser._id === user._id)
-        user.splice(idx, 1, user)
-    } else {
-        user._id = utilService.makeId()
-        user.unshift(user)
-    }
+function save(editedUser) {
+    // if (user._id) {
+    user = editedUser
+        // const idx = user.findIndex(curruser => curruser._id === user._id)
+        // user.splice(idx, 1, user)
+        // } else {
+        //     user._id = utilService.makeId()
+        //     user.unshift(user)
+        // }
     _saveUserToFile()
     return Promise.resolve(user);
 }
