@@ -15,7 +15,8 @@ function query(filterBy) {
     if (filterBy.name) filteredToys = filteredToys.filter(toy => toy.name.toLowerCase().includes(filterBy.name.toLowerCase()));
     if (filterBy.type) filteredToys = filteredToys.filter(toy => toy.type === filterBy.type);
     if (filterBy.inStock) filteredToys = filteredToys.filter(toy => toy.inStock + '' === filterBy.inStock);
-    if (filterBy.sort) filteredToys.sort(utilService.compareValues(filterBy.sort.toLowerCase(), 'asc'))
+    if (filterBy.sort === 'Recently Added') filteredToys.sort(utilService.compareValues('createdAt', 'desc'))
+    else if (filterBy.sort) filteredToys.sort(utilService.compareValues(filterBy.sort.toLowerCase(), 'asc'))
     return Promise.resolve(filteredToys);
 }
 
