@@ -9,11 +9,17 @@ module.exports = {
     add
 }
 
-async function query(filterBy) {
+async function query(filterBy = {}) {
     const criteria = _buildCriteria(filterBy)
+    filterBy.sort = filterBy.sort.toLowerCase();
+    var prop = (filterBy.sort === 'price') ? 'price' : (filterBy.sort === 'name') ? 'name' : 'createdAt';
+    var order = prop === 'createdAt' ? -1 : 1;
+    var sortBy = {
+        [prop]: order
+    }
     const collection = await dbService.getCollection('toy')
     try {
-        const toys = await collection.find(criteria).toArray();
+        const toys = await collection.find(criteria).sort(sortBy).toArray();
         return toys
     } catch (err) {
         console.log('ERROR: cannot find toys')
@@ -73,11 +79,8 @@ async function add(toy) {
 
 function _buildCriteria(filterBy) {
     const criteria = {};
-    if (filterBy.name) {
-        criteria.name = { '$regex': `.*${filterBy.name}.*/i` }
-    }
-    if (filterBy.inStock) {
-        criteria.inStock = filterBy.inStock
-    }
+    if (filterBy.name) criteria.name = { $regex: new RegExp(filterBy.name, 'i') };
+    if (filterBy.type !== '') criteria.type = filterBy.type;
+    if (filterBy.inStock !== '') criteria.inStock = (filterBy.inStock + '' === 'true') ? true : false;
     return criteria;
 }

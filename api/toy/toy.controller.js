@@ -7,7 +7,6 @@ async function getToy(req, res) {
 }
 
 async function getToys(req, res) {
-    console.log('wogoogooo', req.session.user);
     const toys = await toyService.query(req.query)
     logger.debug(toys);
     res.json(toys)
